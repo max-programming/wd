@@ -1,0 +1,59 @@
+<!-- design a web page using html for online railway ticket booking -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Railway Ticket Booking</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Railway Ticket Booking Form</h1>
+    <form>
+      <fieldset>
+        <legend>Passenger Details</legend>
+        <label for="fullname">Full Name: </label>
+        <input type="text" id="fullname" />
+        <br /><br />
+        <label for="age">Age: </label>
+        <input type="number" id="age" />
+        <br /><br />
+        <label for="email">Email: </label>
+        <input type="email" id="email" />
+        <br /><br />
+        <label for="dob">Date of birth: </label>
+        <input type="date" id="dob" />
+        <br />
+        <br />
+        <label for="aadhaar">Aadhaar no.: </label>
+        <input type="number" id="aadhaar" />
+        <br /><br />
+        <label>Class: </label>
+        <input type="radio" name="class" /> Business
+        <input type="radio" name="class" /> Sleeper
+        <input type="radio" name="class" /> Seater <br /><br />
+        <label>Extras: </label>
+        <input type="checkbox" /> Food Services
+        <input type="checkbox" /> Special Bag Storage <br /><br />
+        <label for="from">From: </label>
+        <select id="from">
+          <option disabled selected>Select</option>
+          <option>Surat</option>
+          <option>Baroda</option>
+          <option>Bombay</option>
+          <option>Bharuch</option>
+        </select>
+        <label for="to">To: </label>
+        <select id="to">
+          <option disabled selected>Select</option>
+          <option>Surat</option>
+          <option>Baroda</option>
+          <option>Bombay</option>
+          <option>Bharuch</option>
+        </select>
+      </fieldset>
+    </form>
+  </body>
+</html>
