@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical 12</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 100vh;
+        max-width: 960px;
+        font-family: sans-serif;
+      }
+
+      div {
+        width: 50%;
+        height: 20%;
+        background-color: azure;
+        box-shadow: 5px 5px 15px rgba(194, 112, 13, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        background: linear-gradient(
+          90deg,
+          hsla(333, 100%, 53%, 1) 0%,
+          hsla(33, 94%, 57%, 1) 100%
+        );
+        background-clip: text;
+        color: transparent;
+        animation: textAnimate 2s linear infinite alternate;
+        text-shadow: rgb(194, 112, 13) 1px 0 20px;
+      }
+
+      @keyframes textAnimate {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>ANIMATED TEXT</h2>
+    </div>
+  </body>
+</html>
