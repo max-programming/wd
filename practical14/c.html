@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <button id="btn">Print date</button>
+    <p id="dnt"></p>
+    <script>
+      btn.onclick = () => {
+        dnt.innerHTML = `${new Date().toDateString()} ${new Date().toTimeString()}`;
+      };
+    </script>
+  </body>
+</html>
