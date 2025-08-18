@@ -1,0 +1,29 @@
+h2 {
+  color: brown;
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+hr {
+  background: brown;
+  height: 5px;
+}
+
+p {
+  color: darkblue;
+  font-weight: 500;
+}
+
+a {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+a:active {
+  color: lightgreen;
+}
