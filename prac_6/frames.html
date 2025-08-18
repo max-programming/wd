@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Frames HTML Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      
+      main { 
+        display: flex;
+        height: 100vh;
+      }
+      
+      .links {
+        width: 20%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border-right: 2px solid black;
+      }
+      
+      .preview {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="links">
+        <h3>Click on any link below to show it on the right side</h3>
+        <a href="navigationframes.html" target="frame">Navigation Frames Page</a>
+        <a href="floatingframes.html" target="frame">Floating Frames Page</a>
+      </div>
+      <iframe width="100%" height="100%" name="frame" src="navigationframes.html" frameBorder="0" class="preview"></iframe>
+    </main>
+  </body>
+</html>
