@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fafafa;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.heading {
+  text-align: center;
+}
+.heading h1 {
+  margin: 4px 0 0 0;
+  font-size: 18px;
+}
+.heading h2 {
+  margin: 6px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.subinfo {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+table.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+table.timetable th,
+table.timetable td {
+  border: 1px solid #999;
+  padding: 6px 8px;
+  vertical-align: middle;
+  text-align: center;
+}
+table.timetable thead th {
+  background: #f2f2f2;
+}
+.left-col {
+  width: 110px;
+  font-weight: 700;
+  background: #f9f9f9;
+}
+.lunch {
+  background: #7d1a1a;
+  color: #fff;
+  font-weight: 700;
+}
+.muted {
+  color: #666;
+  font-weight: 400;
+}
+.soft {
+  background: #fff7ea;
+}
+.note {
+  font-size: 12px;
+}
+
+.legend {
+  margin-top: 16px;
+}
+.legend table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.legend th,
+.legend td {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+.legend th {
+  background: #f5f5f5;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .heading h1 {
+    font-size: 16px;
+  }
+  .heading h2 {
+    font-size: 14px;
+  }
+  .left-col {
+    position: sticky;
+    left: 0;
+    background: #fff;
+  }
+}
