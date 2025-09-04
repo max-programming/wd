@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>User Registration</h1>
+        <p>Please fill out the form below to create your account</p>
+      </header>
+
+      <main>
+        <form
+          action="#"
+          method="post"
+          enctype="multipart/form-data"
+          class="registration-form"
+        >
+          <!-- Personal Information Section -->
+          <section class="form-section">
+            <h2>Personal Information</h2>
+
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Gender *</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="male" required />
+                  <span class="radio-text">Male</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="female" required />
+                  <span class="radio-text">Female</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="other" required />
+                  <span class="radio-text">Other</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email ID *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="mobile">Mobile Number *</label>
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="Enter your mobile number"
+                pattern="[0-9]{10}"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="address">Address *</label>
+              <textarea
+                id="address"
+                name="address"
+                rows="4"
+                placeholder="Enter your complete address"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="state">State *</label>
+              <select id="state" name="state" required>
+                <option value="">Select your state</option>
+                <option value="andhra-pradesh">Andhra Pradesh</option>
+                <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                <option value="assam">Assam</option>
+                <option value="bihar">Bihar</option>
+                <option value="chhattisgarh">Chhattisgarh</option>
+                <option value="goa">Goa</option>
+                <option value="gujarat">Gujarat</option>
+                <option value="haryana">Haryana</option>
+                <option value="himachal-pradesh">Himachal Pradesh</option>
+                <option value="jharkhand">Jharkhand</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="kerala">Kerala</option>
+                <option value="madhya-pradesh">Madhya Pradesh</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="manipur">Manipur</option>
+                <option value="meghalaya">Meghalaya</option>
+                <option value="mizoram">Mizoram</option>
+                <option value="nagaland">Nagaland</option>
+                <option value="odisha">Odisha</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="sikkim">Sikkim</option>
+                <option value="tamil-nadu">Tamil Nadu</option>
+                <option value="telangana">Telangana</option>
+                <option value="tripura">Tripura</option>
+                <option value="uttar-pradesh">Uttar Pradesh</option>
+                <option value="uttarakhand">Uttarakhand</option>
+                <option value="west-bengal">West Bengal</option>
+                <option value="delhi">Delhi</option>
+                <option value="jammu-kashmir">Jammu & Kashmir</option>
+                <option value="ladakh">Ladakh</option>
+                <option value="puducherry">Puducherry</option>
+              </select>
+            </div>
+          </section>
+
+          <!-- Education Section -->
+          <section class="form-section">
+            <h2>Educational Background</h2>
+
+            <div class="form-group">
+              <label>Educational Qualifications (Select all that apply)</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="education[]"
+                    value="high-school"
+                  />
+                  <span class="checkbox-text">High School</span>
+                </label>
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="education[]"
+                    value="intermediate"
+                  />
+                  <span class="checkbox-text">Intermediate/+2</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="education[]" value="diploma" />
+                  <span class="checkbox-text">Diploma</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="education[]" value="bachelors" />
+                  <span class="checkbox-text">Bachelor's Degree</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="education[]" value="masters" />
+                  <span class="checkbox-text">Master's Degree</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="education[]" value="phd" />
+                  <span class="checkbox-text">Ph.D.</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="education[]" value="other" />
+                  <span class="checkbox-text">Other</span>
+                </label>
+              </div>
+            </div>
+          </section>
+
+          <!-- Profile Picture Section -->
+          <section class="form-section">
+            <h2>Profile Picture</h2>
+
+            <div class="form-group">
+              <label for="profile-image">Upload Profile Image</label>
+              <input
+                type="file"
+                id="profile-image"
+                name="profile_image"
+                accept="image/*"
+              />
+              <small class="help-text"
+                >Supported formats: JPG, PNG, GIF. Maximum size: 5MB</small
+              >
+            </div>
+          </section>
+
+          <!-- Terms and Submit -->
+          <section class="form-section">
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="terms" id="terms" required />
+                <span class="checkbox-text"
+                  >I agree to the
+                  <a href="#" class="link">Terms and Conditions</a> and
+                  <a href="#" class="link">Privacy Policy</a></span
+                >
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-submit">Register</button>
+              <button type="reset" class="btn-reset">Reset Form</button>
+            </div>
+          </section>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
