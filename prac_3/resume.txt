@@ -1,0 +1,95 @@
+USMAN
+SABUWALA
+
+www.usmans.me
+
+contact@usmans.me
+
+FULL STACK DEVELOPER
+I'm a Full Stack Developer skilled in JavaScript, TypeScript, Flutter, Tailwind CSS, React, Next.js,
+Node.js, Express, NoSQL, SQL, and Puppeteer. I write clean and scalable code, and I stay up-todate with the latest technologies to deliver innovative solutions.
+I run a Blog and YouTube Channel where I teach concepts about programming and web
+development in general.
+
+/@MaxProgramming
+
+EDUCATION
+2021 - 2024
+
+/max-programming
+
+blog.usmans.me
+
+SKILLS
+
+UTU
+
+Languages: JavaScript, TypeScript
+
+Diploma in Computer Science
+
+Frontend: React, Next.js, TanStack
+
+2024 - Present
+
+CKPCET
+
+B.E. in Information Technology
+
+Backend: Node.js, Bun, Express, Nest.js, Go
+Database: SQL, NoSQL, Drizzle, Prisma
+Other: Puppeteer
+
+EXPERIENCE
+Full Stack Developer | Roofer.com, USA, Remote
+June 2023 - May 2024
+I handled the front-end with Next.js, React, Tailwind CSS & Shadcn UI with a team of
+experienced developers working on multiple production-ready web apps. The backend
+used was Supabase with serverless architecture.
+
+Frontend React Developer | VertexDev, Australia, Remote
+Contract
+I contributed to the development of interactive and user-friendly web applications
+using React and Next.js.
+
+PROJECTS
+Prompt - Issue Management Web App
+Freelance Project - Screenshots
+An Issue Management Web Application for an IT company to track client issues, comment, assign, and
+search them by client name. Additionally, a work-in-progress page to see status of issues in real-time
+
+Whim
+Personal Project - whim.day
+Whim is a simple and secure app for sharing secret messages anonymously. The messages are end-toend encrypted and are vanished after being read. No account required. Open-source
+
+Easy Pastes
+Personal Project - GitHub Repository
+A web app where users can easily paste some code they want to share with someone with syntax
+highlight and they can make it public, private or unlisted. More on blog.usmans.me/easypastes
+
+WhatsApp REST API
+Freelance Project
+A REST API that uses WhatsApp Web in the background to send messages programmatically. And then
+taking it further to handle multiple WhatsApp connections & sessions at the same time and do the
+processing on cloud.
+
+AliExpress Order Extractor & Google Sheets Integration
+Freelance Project
+
+A web scraper built with Node.js and Puppeteer to log in user, extract each of their order information,
+tracking information and update a Google Sheet using the Sheets API every few hours automatically.
+
+Hacktoberfest Project Finder
+
+Personal Project - https://finder.usmans.me
+A website for developers to find open-source GitHub projects to contribute to in Hacktoberfest. It has
+features of search, sort by factors, find by language, etc.
+
+ACHIEVEMENTS
+Winner in Clerk x Hashnode Hackathon
+Award for Best Solution Creating Impact on Academics in Creato
+Hackathon 2023 at BBIT University, Anand
+Participated in Nativebase x iNeuron Hackathon, CHARUSAT Hackathon,
+Linode x Hashnode Hackathon, Netlify x Hashnode Hackathon etc.
+
+
