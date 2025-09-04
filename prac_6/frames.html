@@ -1,41 +1,77 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Frames HTML Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frames Example</title>
     <style>
-      * {
+      body {
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
+        font-family: Arial, sans-serif;
       }
-      
-      main { 
+      .container {
         display: flex;
         height: 100vh;
       }
-      
-      .links {
+      .left-column {
         width: 20%;
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        border-right: 2px solid black;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-right: 2px solid #ccc;
       }
-      
-      .preview {
+      .right-column {
         width: 80%;
+        border: none;
+      }
+      .nav-links {
+        list-style: none;
+        padding: 0;
+      }
+      .nav-links li {
+        margin-bottom: 15px;
+      }
+      .nav-links a {
+        display: block;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .nav-links a:hover {
+        background-color: #0056b3;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
       }
     </style>
   </head>
   <body>
-    <main>
-      <div class="links">
-        <h3>Click on any link below to show it on the right side</h3>
-        <a href="navigationframes.html" target="frame">Navigation Frames Page</a>
-        <a href="floatingframes.html" target="frame">Floating Frames Page</a>
+    <div class="container">
+      <div class="left-column">
+        <h2>Navigation</h2>
+        <ul class="nav-links">
+          <li>
+            <a href="navigationframes.html" target="rightFrame"
+              >Navigation Frames</a
+            >
+          </li>
+          <li>
+            <a href="floatingframes.html" target="rightFrame"
+              >Floating Frames</a
+            >
+          </li>
+        </ul>
       </div>
-      <iframe width="100%" height="100%" name="frame" src="navigationframes.html" frameBorder="0" class="preview"></iframe>
-    </main>
+      <div class="right-column">
+        <iframe name="rightFrame" src="navigationframes.html">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      </div>
+    </div>
   </body>
 </html>
