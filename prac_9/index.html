@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Combiner</title>
+  </head>
+  <body style="font-family: Arial; text-align: center; margin-top: 50px">
+    <h1 style="color: #333">Text Combiner</h1>
+    <p style="font-size: 18px; color: #666">
+      Enter text in both boxes and click combine
+    </p>
+
+    <div style="margin: 20px 0">
+      <input
+        type="text"
+        id="textBox1"
+        placeholder="Enter first text"
+        style="
+          padding: 10px;
+          font-size: 16px;
+          width: 300px;
+          margin: 10px;
+          border: 2px solid #ddd;
+          border-radius: 5px;
+        "
+      />
+    </div>
+
+    <div style="margin: 20px 0">
+      <input
+        type="text"
+        id="textBox2"
+        placeholder="Enter second text"
+        style="
+          padding: 10px;
+          font-size: 16px;
+          width: 300px;
+          margin: 10px;
+          border: 2px solid #ddd;
+          border-radius: 5px;
+        "
+      />
+    </div>
+
+    <div style="margin: 20px 0">
+      <button
+        onclick="combineText()"
+        style="
+          padding: 12px 24px;
+          font-size: 16px;
+          background: #007aff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        "
+      >
+        Combine Text
+      </button>
+    </div>
+
+    <div
+      id="result"
+      style="
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #007aff;
+        min-height: 50px;
+        border: 2px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+      "
+    ></div>
+
+    <script>
+      function combineText() {
+        const textBox1 = document.getElementById("textBox1");
+        const textBox2 = document.getElementById("textBox2");
+        const result = document.getElementById("result");
+
+        const text1 = textBox1.value.trim();
+        const text2 = textBox2.value.trim();
+
+        if (text1 === "" && text2 === "") {
+          result.textContent = "Please enter text in at least one box";
+          result.style.color = "#ff3b30";
+          return;
+        }
+
+        if (text1 === "") {
+          result.textContent = `Combined text: "${text2}"`;
+        } else if (text2 === "") {
+          result.textContent = `Combined text: "${text1}"`;
+        } else {
+          result.textContent = `Combined text: "${text1} ${text2}"`;
+        }
+
+        result.style.color = "#007aff";
+      }
+
+      // Initial message
+      document.getElementById("result").textContent =
+        "Enter text and click combine...";
+    </script>
+  </body>
+</html>

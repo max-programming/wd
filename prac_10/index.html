@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body
+    style="
+      font-family: Arial;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+    "
+  >
+    <h1 style="color: #333; text-align: center">Registration Form</h1>
+
+    <form
+      id="registrationForm"
+      style="
+        background: #f9f9f9;
+        padding: 30px;
+        border-radius: 10px;
+        border: 2px solid #ddd;
+      "
+    >
+      <div style="margin-bottom: 20px">
+        <label
+          for="firstName"
+          style="display: block; margin-bottom: 5px; font-weight: bold"
+          >First Name:</label
+        >
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+          "
+        />
+        <div
+          id="firstNameError"
+          style="color: #ff3b30; font-size: 14px; margin-top: 5px"
+        ></div>
+      </div>
+
+      <div style="margin-bottom: 20px">
+        <label
+          for="lastName"
+          style="display: block; margin-bottom: 5px; font-weight: bold"
+          >Last Name:</label
+        >
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+          "
+        />
+        <div
+          id="lastNameError"
+          style="color: #ff3b30; font-size: 14px; margin-top: 5px"
+        ></div>
+      </div>
+
+      <div style="margin-bottom: 20px">
+        <label
+          for="email"
+          style="display: block; margin-bottom: 5px; font-weight: bold"
+          >Email:</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+          "
+        />
+        <div
+          id="emailError"
+          style="color: #ff3b30; font-size: 14px; margin-top: 5px"
+        ></div>
+      </div>
+
+      <div style="margin-bottom: 20px">
+        <label
+          for="password"
+          style="display: block; margin-bottom: 5px; font-weight: bold"
+          >Password:</label
+        >
+        <input
+          type="password"
+          id="password"
+          name="password"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+          "
+        />
+        <div
+          id="passwordError"
+          style="color: #ff3b30; font-size: 14px; margin-top: 5px"
+        ></div>
+      </div>
+
+      <div style="margin-bottom: 20px">
+        <label
+          for="confirmPassword"
+          style="display: block; margin-bottom: 5px; font-weight: bold"
+          >Confirm Password:</label
+        >
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+          "
+        />
+        <div
+          id="confirmPasswordError"
+          style="color: #ff3b30; font-size: 14px; margin-top: 5px"
+        ></div>
+      </div>
+
+      <div style="margin-bottom: 20px">
+        <label
+          for="phone"
+          style="display: block; margin-bottom: 5px; font-weight: bold"
+          >Phone Number:</label
+        >
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+          "
+        />
+        <div
+          id="phoneError"
+          style="color: #ff3b30; font-size: 14px; margin-top: 5px"
+        ></div>
+      </div>
+
+      <div style="margin-bottom: 20px">
+        <label
+          for="age"
+          style="display: block; margin-bottom: 5px; font-weight: bold"
+          >Age:</label
+        >
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="1"
+          max="120"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+          "
+        />
+        <div
+          id="ageError"
+          style="color: #ff3b30; font-size: 14px; margin-top: 5px"
+        ></div>
+      </div>
+
+      <div style="margin-bottom: 30px">
+        <label style="display: block; margin-bottom: 10px; font-weight: bold"
+          >Gender:</label
+        >
+        <div style="display: flex; gap: 20px">
+          <label style="display: flex; align-items: center; gap: 5px">
+            <input type="radio" name="gender" value="male" style="margin: 0" />
+            Male
+          </label>
+          <label style="display: flex; align-items: center; gap: 5px">
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              style="margin: 0"
+            />
+            Female
+          </label>
+          <label style="display: flex; align-items: center; gap: 5px">
+            <input type="radio" name="gender" value="other" style="margin: 0" />
+            Other
+          </label>
+        </div>
+        <div
+          id="genderError"
+          style="color: #ff3b30; font-size: 14px; margin-top: 5px"
+        ></div>
+      </div>
+
+      <div style="margin-bottom: 20px">
+        <label
+          style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+          "
+        >
+          <input type="checkbox" id="terms" name="terms" style="margin: 0" />
+          I agree to the terms and conditions
+        </label>
+        <div
+          id="termsError"
+          style="color: #ff3b30; font-size: 14px; margin-top: 5px"
+        ></div>
+      </div>
+
+      <button
+        type="submit"
+        style="
+          width: 100%;
+          padding: 15px;
+          font-size: 18px;
+          background: #007aff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-weight: bold;
+        "
+      >
+        Register
+      </button>
+
+      <div
+        id="successMessage"
+        style="
+          color: #34c759;
+          font-size: 16px;
+          margin-top: 20px;
+          text-align: center;
+          font-weight: bold;
+        "
+      ></div>
+    </form>
+
+    <script>
+      function validateForm(event) {
+        event.preventDefault();
+
+        clearErrors();
+
+        let isValid = true;
+
+        const firstName = document.getElementById("firstName").value.trim();
+        if (firstName === "") {
+          showError("firstNameError", "First name is required");
+          isValid = false;
+        } else if (firstName.length < 2) {
+          showError(
+            "firstNameError",
+            "First name must be at least 2 characters"
+          );
+          isValid = false;
+        }
+
+        const lastName = document.getElementById("lastName").value.trim();
+        if (lastName === "") {
+          showError("lastNameError", "Last name is required");
+          isValid = false;
+        } else if (lastName.length < 2) {
+          showError("lastNameError", "Last name must be at least 2 characters");
+          isValid = false;
+        }
+
+        const email = document.getElementById("email").value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === "") {
+          showError("emailError", "Email is required");
+          isValid = false;
+        } else if (!emailRegex.test(email)) {
+          showError("emailError", "Please enter a valid email address");
+          isValid = false;
+        }
+
+        const password = document.getElementById("password").value;
+        if (password === "") {
+          showError("passwordError", "Password is required");
+          isValid = false;
+        } else if (password.length < 8) {
+          showError("passwordError", "Password must be at least 8 characters");
+          isValid = false;
+        } else if (!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/.test(password)) {
+          showError(
+            "passwordError",
+            "Password must contain at least one uppercase letter, one lowercase letter, and one number"
+          );
+          isValid = false;
+        }
+
+        const confirmPassword =
+          document.getElementById("confirmPassword").value;
+        if (confirmPassword === "") {
+          showError("confirmPasswordError", "Please confirm your password");
+          isValid = false;
+        } else if (password !== confirmPassword) {
+          showError("confirmPasswordError", "Passwords do not match");
+          isValid = false;
+        }
+
+        const phone = document.getElementById("phone").value.trim();
+        const phoneRegex = /^[\d\s\-\+\(\)]+$/;
+        if (phone === "") {
+          showError("phoneError", "Phone number is required");
+          isValid = false;
+        } else if (!phoneRegex.test(phone) || phone.length < 10) {
+          showError("phoneError", "Please enter a valid phone number");
+          isValid = false;
+        }
+
+        const age = document.getElementById("age").value;
+        if (age === "") {
+          showError("ageError", "Age is required");
+          isValid = false;
+        } else if (age < 18 || age > 120) {
+          showError("ageError", "Age must be between 18 and 120");
+          isValid = false;
+        }
+
+        const gender = document.querySelector('input[name="gender"]:checked');
+        if (!gender) {
+          showError("genderError", "Please select a gender");
+          isValid = false;
+        }
+
+        const terms = document.getElementById("terms").checked;
+        if (!terms) {
+          showError("termsError", "You must agree to the terms and conditions");
+          isValid = false;
+        }
+
+        if (isValid) {
+          document.getElementById("successMessage").textContent =
+            "Registration successful! Welcome " + firstName + " " + lastName;
+          document.getElementById("successMessage").style.display = "block";
+          document.getElementById("registrationForm").reset();
+        }
+      }
+
+      function showError(elementId, message) {
+        document.getElementById(elementId).textContent = message;
+      }
+
+      function clearErrors() {
+        const errorElements = [
+          "firstNameError",
+          "lastNameError",
+          "emailError",
+          "passwordError",
+          "confirmPasswordError",
+          "phoneError",
+          "ageError",
+          "genderError",
+          "termsError",
+        ];
+        errorElements.forEach(id => {
+          document.getElementById(id).textContent = "";
+        });
+        document.getElementById("successMessage").textContent = "";
+      }
+
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", validateForm);
+
+      document
+        .getElementById("confirmPassword")
+        .addEventListener("input", function () {
+          const password = document.getElementById("password").value;
+          const confirmPassword = this.value;
+
+          if (confirmPassword !== "" && password !== confirmPassword) {
+            showError("confirmPasswordError", "Passwords do not match");
+          } else {
+            document.getElementById("confirmPasswordError").textContent = "";
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's Date</title>
+  </head>
+  <body>
+    <h1>Today's Date</h1>
+    <div id="dateDisplay"></div>
+    <div>
+      <button onclick="showFullDate()">Full Date</button>
+      <button onclick="showShortDate()">Short Date</button>
+      <button onclick="showTime()">Time Only</button>
+    </div>
+
+    <script>
+      function getCurrentDate() {
+        return new Date();
+      }
+
+      function showFullDate() {
+        const today = getCurrentDate();
+        const options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        document.getElementById("dateDisplay").textContent =
+          today.toLocaleDateString("en-US", options);
+      }
+
+      function showShortDate() {
+        const today = getCurrentDate();
+        document.getElementById("dateDisplay").textContent =
+          today.toLocaleDateString();
+      }
+
+      function showTime() {
+        const today = getCurrentDate();
+        document.getElementById("dateDisplay").textContent =
+          today.toLocaleTimeString();
+      }
+
+      window.onload = function () {
+        showFullDate();
+      };
+    </script>
+  </body>
+</html>

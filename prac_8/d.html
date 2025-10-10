@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Press Detector</title>
+  </head>
+  <body style="font-family: Arial; text-align: center; margin-top: 50px">
+    <h1 style="color: #333">Key Press Detector</h1>
+    <p style="font-size: 18px; color: #666">Press any key to see its value</p>
+    <div
+      id="keyDisplay"
+      style="
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #007aff;
+        min-height: 50px;
+        border: 2px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+      "
+    ></div>
+    <div
+      id="keyInfo"
+      style="margin-top: 20px; font-size: 16px; color: #666"
+    ></div>
+
+    <script>
+      function displayKeyInfo(event) {
+        const keyDisplay = document.getElementById("keyDisplay");
+        const keyInfo = document.getElementById("keyInfo");
+
+        const key = event.key;
+        const keyCode = event.keyCode;
+        const code = event.code;
+
+        keyDisplay.textContent = `Key pressed: "${key}"`;
+
+        keyInfo.innerHTML = `
+                <div><strong>Key:</strong> ${key}</div>
+                <div><strong>Key Code:</strong> ${keyCode}</div>
+                <div><strong>Code:</strong> ${code}</div>
+            `;
+      }
+
+      document.addEventListener("keydown", displayKeyInfo);
+
+      document.getElementById("keyDisplay").textContent = "Press any key...";
+    </script>
+  </body>
+</html>
